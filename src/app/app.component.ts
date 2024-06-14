@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TaskListComponent } from '../component/task-list/task-list.component';
+import { PipesExampleComponent } from '../component/pipes-example/pipes-example.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [TaskListComponent, PipesExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

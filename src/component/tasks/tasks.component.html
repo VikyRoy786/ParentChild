@@ -1,0 +1,7 @@
+<div class="row">
+  <div class="col-sm-1">{{ taskitems.id }}</div>
+  <div class="col-sm-4">{{ taskitems.Desc }}</div>
+  <div class="col-sm-1">{{ taskitems.Priority }}</div>
+  <div class="col-sm-1">{{ taskitems.status }}</div>
+  <div class="col-sm-1"><button class ="bi bi-trash" (click)="onRemove(taskitems.id)"></button></div>
+</div>

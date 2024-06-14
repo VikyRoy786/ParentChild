@@ -1,0 +1,24 @@
+
+
+
+<!--  -->
+
+
+<div class="container">
+    <app-add-task (add)="AddList($event)" ></app-add-task>
+  <div class="row">
+
+    <div class="col-sm-1">ID</div>
+    <div class="col-sm-4">Desc</div>
+    <div class="col-sm-1">Priority</div>
+    <div class="col-sm-1">Status</div>
+    <div class="col-sm-1">Action</div>
+  </div>
+
+  @for(taskitems of taskList; track taskitems.id ){
+
+  <app-tasks [taskitems]="taskitems" (vata)="jadoo($event)"> </app-tasks>
+
+  }.
+  
+</div>
