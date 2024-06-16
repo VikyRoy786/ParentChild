@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { TasksComponent } from '../tasks/tasks.component';
 import { FormsModule } from '@angular/forms';
 import { AddTaskComponent } from '../add-task/add-task.component';
+import { FilterComponent } from '../filter/filter.component';
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [TasksComponent, FormsModule,AddTaskComponent],
+  imports: [TasksComponent, FormsModule,AddTaskComponent, FilterComponent],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
@@ -16,6 +17,7 @@ taskList = [{id : 1, Desc: "Coming to office", Priority: 2, status : "Completed"
              {id : 3, Desc: "Working", Priority: 1, status : "Pending"},
              {id : 4, Desc: "Going GYM", Priority: 1, status : "Pending"}
 ]  
+filteredTasks: any[] = [];
 
 jadoo(n1 : number) : void{
   this.taskList=this.taskList.filter((task)=>task.id!==n1)
@@ -23,8 +25,8 @@ jadoo(n1 : number) : void{
 AddList(arr:any): void{
   this.taskList.push(arr);
 }
-listfilter(status : string): void {
-  this.taskList = this.taskList.filter((fill)=>fill.status == status)
+filterTasks(status: string): void {
+  this.filteredTasks = this.taskList.filter(tasks => tasks.status.includes(status));
 }
 
 
