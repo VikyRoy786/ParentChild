@@ -1,7 +1,27 @@
-<div class="row">
-  <div class="col-sm-1">{{ taskitems.id }}</div>
-  <div class="col-sm-4">{{ taskitems.Desc }}</div>
-  <div class="col-sm-1">{{ taskitems.Priority }}</div>
-  <div class="col-sm-1">{{ taskitems.status }}</div>
-  <div class="col-sm-1"><button class ="bi bi-trash" (click)="onRemove(taskitems.id)"></button></div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>Your Title Here</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1">{{ taskitems.id }}</div>
+      <div class="col-sm-4">{{ taskitems.Desc }}</div>
+      <div class="col-sm-1">{{ taskitems.Priority }}</div>
+      <div class="col-sm-1">{{ taskitems.status }}</div>
+      <div class="col-sm-1">
+        <button class="btn btn-primary bi bi-trash" (click)="onRemove(taskitems.id)"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional, only required if you use Bootstrap's JavaScript components) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
