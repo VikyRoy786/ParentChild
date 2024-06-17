@@ -1,6 +1,23 @@
-<div><label>ID :</label>  <input type=" text" [(ngModel)] ="addtask.id"></div>
-<div><label>Desc : </label><input type=" text" [(ngModel)] ="addtask.Desc"></div>
-<div><label>Priority :</label>  <input type=" text" [(ngModel)] ="addtask.Priority"></div>
-<div><label>Status :</label>  <input type=" text" [(ngModel)] ="addtask.status"></div>
 
-<div><button class = "bi bi-add" (click) = "AddList()"> Add</button></div>
+<div class="mb-3"><label>ID :
+    <input type="text"  class="form-control" [(ngModel)] ="addtask.id"></label>
+  </div>
+  <div class="mb-3"><label>Desc :
+    <input type="text"  class="form-control" [(ngModel)] ="addtask.Desc"></label>
+  </div>
+  <div class="mb-3"><label>Priority :
+    <input type="email"  class="form-control" [(ngModel)] ="addtask.Priority"></label>
+  </div>
+  <div class="mb-3"><label>Status :
+    <input type="email"  class="form-control" [(ngModel)] ="addtask.status"></label>
+  </div>
+
+<div class="mb-3"><button class = "btn btn-primary bi bi-plus" (click) = "AddList()" > Add</button>
+  
+
+</div>
+
+
+
+
+  

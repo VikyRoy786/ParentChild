@@ -1,3 +1,11 @@
-table, th, td {
-    border: 1px solid black;
-  }
+.task-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #bffec3;
+  border: 1px solid #f4f5b7;
+  border-radius: 5px;
+}
+
+.task-item button {
+  margin-top: 5px;
+}
