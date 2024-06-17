@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { TasksComponent } from '../tasks/tasks.component';
 import { FormsModule } from '@angular/forms';
 import { AddTaskComponent } from '../add-task/add-task.component';
-import { FilterComponent } from '../filter/filter.component';
+
 
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [TasksComponent, FormsModule,AddTaskComponent, FilterComponent],
+  imports: [TasksComponent, FormsModule,AddTaskComponent],
   templateUrl: './task-list.component.html',
   styleUrl: './task-list.component.css'
 })
