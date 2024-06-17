@@ -1,11 +1,12 @@
 import { CurrencyPipe, DatePipe, JsonPipe, LowerCasePipe, PercentPipe, TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FilterPipe } from '../../CustomPipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-pipes-example',
   standalone: true,
-  imports: [CurrencyPipe,DatePipe,JsonPipe,PercentPipe,LowerCasePipe,UpperCasePipe,TitleCasePipe,FilterPipe],
+  imports: [CurrencyPipe,DatePipe,JsonPipe,PercentPipe,LowerCasePipe,UpperCasePipe,TitleCasePipe,FilterPipe, FormsModule],
   templateUrl: './pipes-example.component.html',
   styleUrl: './pipes-example.component.css'
 })
@@ -23,5 +24,5 @@ export class PipesExampleComponent {
       {fname:"Sachin",lname:"Tendulkar"},
       {fname:"Rahul",lname:"Dravid"}
     ]
-  
+    isChecked = false;
 }

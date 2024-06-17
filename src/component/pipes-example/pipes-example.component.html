@@ -27,5 +27,12 @@
     </div>
     <div>
       <h2>Using custom FilterPipe</h2>
-      <p>Object: {{ arrObj | filter:'fname':'Sachin' | json }}</p>
+      <input type ="checkbox" [(ngModel)] = "isChecked" > Check
+      @if(isChecked){
+        <h2>Hello Object: {{ arrObj | filter:'fname':'Sachin' | json }}</h2>
+      }
+      @else {
+        <h2>Bye Object: {{ arrObj | filter:'lname':'Dravid' | json }}</h2>
+      }
+      
     </div>
